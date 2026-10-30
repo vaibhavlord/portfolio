@@ -602,7 +602,7 @@
     .skills-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      gap: 1.5rem;
       align-items: start;
     }
     .skill-card {
@@ -1011,8 +1011,8 @@
       <div class="skills-layout">
         <div class="skill-card reveal reveal-delay-2">
           <div class="skill-header">
-            <div class="skill-icon">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M12 0C5.372 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.993 3.995-.282 1.193.599 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.084.345-.092.375-.293 1.199-.334 1.363-.053.225-.174.271-.402.163-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            <div class="skill-icon" style="background: linear-gradient(135deg, #306998, #FFD43B);">
+              <svg viewBox="0 0 256 255" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pa" x1="12.96%" y1="12.07%" x2="79.68%" y2="78.43%"><stop offset="0%" stop-color="#387EB8"/><stop offset="100%" stop-color="#366994"/></linearGradient><linearGradient id="pb" x1="19.13%" y1="20.58%" x2="90.57%" y2="88.29%"><stop offset="0%" stop-color="#FFE052"/><stop offset="100%" stop-color="#FFC331"/></linearGradient></defs><path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#pa)"/><path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#pb)"/></svg>
             </div>
             <div>
               <div class="skill-name">Python</div>
@@ -1031,7 +1031,30 @@
           </div>
         </div>
 
-        <div class="skill-code reveal reveal-delay-3">
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-header">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #f05032, #de4c36);">
+              <svg viewBox="0 0 256 256" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.78 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-1.39V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.31L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.32" fill="#fff"/></svg>
+            </div>
+            <div>
+              <div class="skill-name">Git & GitHub</div>
+              <div class="skill-level">● Exploring</div>
+            </div>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="30" style="background: linear-gradient(90deg, #f05032, #de4c36);"></div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Version Control</span>
+            <span class="skill-tag">Repositories</span>
+            <span class="skill-tag">Collaboration</span>
+            <span class="skill-tag">Open Source</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code window below -->
+      <div class="skill-code reveal reveal-delay-4" style="margin-top: 2rem; max-width: 600px;">
           <div class="code-titlebar">
             <span class="code-dot r"></span>
             <span class="code-dot y"></span>
@@ -1091,7 +1114,7 @@
           <h3 class="interest-title">Production</h3>
           <p class="interest-desc">Exploring the full pipeline — from pre-production planning to post-production magic.</p>
         </div>
-        <div class="interest-card interest-card-accent reveal reveal-delay-4">
+        <div class="interest-card reveal reveal-delay-4">
           <span class="interest-icon">🤖</span>
           <h3 class="interest-title">Playing with AI</h3>
           <p class="interest-desc">Experimenting with ChatGPT, Midjourney, and coding assistants — using AI for fun & productivity.</p>
@@ -1117,8 +1140,8 @@
         </div>
         <div class="timeline-item reveal reveal-delay-1">
           <span class="timeline-status active"><span class="dot-sm"></span> In Progress</span>
-          <h3 class="timeline-title">BTech Coursework — Year One</h3>
-          <p class="timeline-desc">Navigating my first year at NST-RU, exploring the fundamentals of engineering and discovering where my curiosity leads.</p>
+          <h3 class="timeline-title">First Year - Exploring Phase</h3>
+          <p class="timeline-desc">Navigating my first year at NST-RU, exploring the fundamentals of engineering, exploring open source, competitive programming and discovering where my curiosity leads.</p>
         </div>
         <div class="timeline-item reveal reveal-delay-2">
           <span class="timeline-status next">◇ Next Up</span>
