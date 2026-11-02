@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Vaibhav Chaudhary — BTech student, Python developer, and AI enthusiast.",
+  "main": "index.html",
+  "scripts": {
+    "build:analytics": "esbuild analytics.js --bundle --format=iife --outfile=analytics-bundle.js --minify",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavlord/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site"
+  ],
+  "author": "Vaibhav Chaudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaibhavlord/portfolio/issues"
+  },
+  "homepage": "https://github.com/vaibhavlord/portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
