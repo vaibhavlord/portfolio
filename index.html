@@ -1,397 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vaibhav Chaudhary — Developer & AI Explorer</title>
-  <meta name="description" content="Portfolio of Vaibhav Chaudhary — BTech student, Python developer, and AI enthusiast." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f0">
+  <meta name="description" content="Vaibhav Chaudhary — first-year BTech student at NST-RU. Learning Python, exploring AI, and following my curiosity.">
+  <title>Vaibhav Chaudhary — Curious by default.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700;750;800;850;900&family=IBM+Plex+Mono:wght@400;450;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
-
-  <!-- ========== NAV ========== -->
-  <nav id="navbar">
-    <div class="container">
-      <a href="#hero" class="nav-brand">
-        <div class="nav-logo">vc.</div>
-        <div class="nav-brand-text">
-          <div class="nav-brand-name">Vaibhav Chaudhary</div>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#exploring">Exploring</a></li>
-        <li>
-          <a href="#contact" class="nav-contact">Contact
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
-          </a>
-        </li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- mobile menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#skills" onclick="closeMenu()">Skills</a>
-    <a href="#interests" onclick="closeMenu()">Interests</a>
-    <a href="#exploring" onclick="closeMenu()">Exploring</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-  </div>
-
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <div class="container">
-      <div class="hero-layout">
-        <!-- left -->
-        <div class="hero-content">
-          <div class="hero-available reveal">
-            <span class="dot"></span> Available for collaborations
-          </div>
-          <div class="hero-hello reveal reveal-delay-1">Hello, world. I'm</div>
-          <h1 class="hero-name reveal reveal-delay-1">
-            Vaibhav<span class="hero-name-bold">Chaudhary</span>
-          </h1>
-          <div class="hero-tagline reveal reveal-delay-2">A curious mind. A few lines of code.</div>
-          <span class="hero-tagline-accent reveal reveal-delay-2">A whole lot to explore.</span>
-          <p class="hero-desc reveal reveal-delay-3">
-            First-year BTech student building with Python and exploring the
-            world of Artificial Intelligence. Where code meets intelligence
-            — and curiosity takes the lead.
-          </p>
-          <div class="hero-cta reveal reveal-delay-4">
-            <a href="#contact" class="btn btn-primary">
-              Get in Touch
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
-            </a>
-            <a href="#about" class="btn btn-ghost">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- right - visual collage -->
-        <div class="hero-visual reveal reveal-delay-2">
-          <!-- tag -->
-          <div class="hero-tag hero-tag-code">&lt; learning by doing /&gt;</div>
-
-          <!-- annotation -->
-          <div class="hero-annotation hero-annotation-beta">
-            always in beta
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"/></svg>
-          </div>
-
-          <!-- robot -->
-          <div class="robot-container">
-            <div class="robot-label">imagination.exe</div>
-            <div class="robot">
-              <div class="robot-antenna"></div>
-              <div class="robot-screen">
-                <div class="robot-eye"></div>
-                <div class="robot-eye"></div>
-              </div>
-              <div class="robot-mouth"></div>
-            </div>
-          </div>
-
-          <!-- code window -->
-          <div class="hero-code">
-            <div class="code-titlebar">
-              <span class="code-dot r"></span>
-              <span class="code-dot y"></span>
-              <span class="code-dot g"></span>
-              <span class="code-filename">hello_world.py</span>
-              <span class="code-icon">&lt;/&gt;</span>
-            </div>
-            <div class="code-body">
-              <div><span class="kw">while</span> curious:</div>
-              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">learn</span>()</div>
-              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">experiment</span>()</div>
-              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">repeat</span>()</div>
-              <div class="code-note"><span class="cm">&gt; still figuring things out. and loving it.</span><span class="terminal-cursor"></span></div>
-            </div>
-          </div>
-
-          <!-- curious badge -->
-          <div class="curious-badge">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"/></svg>
-            <span>Curious<br/>by default</span>
-          </div>
-
-          <div class="hero-footnote">No final form. Yet.</div>
-        </div>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <header class="header" id="header">
+    <a class="brand" href="#home" aria-label="Vaibhav, back to top">vaibhav<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#about" data-nav="about">The human</a><a href="#skills" data-nav="skills">The toolkit</a><a href="#interests" data-nav="interests">Offscreen</a></nav>
+    <div class="header-actions"><button class="motion-button" id="motionToggle" type="button" aria-pressed="false" aria-label="Pause animations" title="Pause animations"><span class="motion-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="motion-label">Motion on</span></button><a class="hello-link" href="#contact">Let's talk <span class="small-circle" aria-hidden="true">↗</span></a><button class="menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation"><span></span><span></span></button></div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden><a href="#about">The human <span>01</span></a><a href="#skills">The toolkit <span>02</span></a><a href="#interests">Offscreen <span>03</span></a><a href="#exploring">What's next <span>04</span></a><a href="#contact">Let's talk <span>↗</span></a></nav>
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle"><div class="hero-sticky">
+      <div class="hero-topline"><span class="eyebrow"><span class="status-dot"></span> A WORK IN PROGRESS. IN A GOOD WAY.</span><span class="eyebrow hero-location">BASED IN INDIA <span aria-hidden="true">↗</span></span></div>
+      <div class="hero-grid"><div class="hero-copy"><p class="intro-line">Hey, I'm <strong>Vaibhav Chaudhary.</strong><span class="wave" aria-hidden="true">✳</span></p><h1 id="heroTitle"><span class="hero-line"><span>Curious</span></span><span class="hero-line"><span>by <em>default.</em></span></span></h1><p class="hero-description">BTech student. Python enthusiast. AI explorer.<br>Connecting the dots. Occasionally creating new ones.</p><a class="pill-button magnetic" href="#about"><span>A little about me</span><span class="button-arrow" aria-hidden="true">↓</span></a></div>
+        <div class="hero-art" id="heroArt"><div class="art-grid" aria-hidden="true"></div><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div><span class="art-coordinate coordinate-top eyebrow" aria-hidden="true">FIG. 01 — THE DEFAULT SETTING</span><div class="key-travel"><div class="key-tilt" id="keyTilt"><button class="curiosity-key" id="curiosityKey" type="button" aria-label="Press the curiosity key for a thought"><span class="key-edge" aria-hidden="true"></span><span class="key-face"><span class="key-top-label">ESC? NEVER HEARD OF IT.</span><span class="key-glyph" aria-hidden="true">✳</span><span class="key-bottom-label"><span>curiosity</span><span class="key-shortcut" aria-hidden="true">↗</span></span></span></button></div></div><span class="key-sticker" aria-hidden="true">go on, press it <svg viewBox="0 0 60 32"><path d="M2 26C18 34 39 28 48 6m-12 3 14-6 5 15"/></svg></span><p class="key-caption" id="keyCaption" aria-live="polite">My most-used key. Metaphorically.</p><span class="art-coordinate coordinate-bottom eyebrow" aria-hidden="true"><span class="tiny-cross">+</span> ALWAYS ON. NO OFF SWITCH.</span></div>
       </div>
-    </div>
-
-    <!-- bottom bar -->
-    <div class="hero-bottom">
-      <div class="container">
-        <div class="hero-bottom-left">
-          Currently exploring &nbsp;<span class="dot-sm"></span>&nbsp; Python &nbsp;/ &nbsp;Artificial Intelligence
-        </div>
-        <div class="hero-bottom-center">A little curiosity goes a long way.</div>
-        <a href="#about" class="hero-bottom-right">
-          More about me
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ========== ABOUT ========== -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <div class="section-label reveal">About Me</div>
-          <h2 class="section-title reveal reveal-delay-1">Crafting at the<br />intersection of <strong>code & AI</strong></h2>
-          <p class="reveal reveal-delay-2">
-            I'm <strong>Vaibhav Chaudhary</strong>, a first-year BTech student at <strong>NST-RU</strong> with an insatiable curiosity for how things work — from building scripts to understanding how machines learn and think.
-          </p>
-          <p class="reveal reveal-delay-3">
-            My days are split between writing <strong>Python</strong> programs and diving into the fascinating world of <strong>Artificial Intelligence</strong>. I believe the future belongs to those who can both build and think intelligently — and that's exactly the intersection I want to live in.
-          </p>
-          <p class="reveal reveal-delay-4">
-            When I'm not coding, you'll find me exploring AI concepts, experimenting with new tools, or reading about the latest breakthroughs in machine learning and technology.
-          </p>
-        </div>
-        <div class="about-card reveal reveal-delay-2">
-          <div class="about-card-item">
-            <div class="about-card-label">Name</div>
-            <div class="about-card-value">Vaibhav Chaudhary</div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-label">Education</div>
-            <div class="about-card-value">BTech, First Year</div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-label">University</div>
-            <div class="about-card-value">NST-RU</div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-label">Focus</div>
-            <div class="about-card-value">Python · AI · Problem Solving</div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-label">Location</div>
-            <div class="about-card-value">India 🇮🇳</div>
-          </div>
-          <div class="about-annotation">still leveling up ✦</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ========== SKILLS ========== -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-label reveal">Skills</div>
-      <h2 class="section-title reveal reveal-delay-1">Tools of the <strong>trade</strong></h2>
-      <p class="section-subtitle reveal reveal-delay-2">Building from the ground up — one concept at a time.</p>
-
-      <div class="skills-layout">
-        <div class="skill-card reveal reveal-delay-2">
-          <div class="skill-header">
-            <div class="skill-icon">
-              <svg viewBox="0 0 256 255" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pa" x1="12.96%" y1="12.07%" x2="79.68%" y2="78.43%"><stop offset="0%" stop-color="#387EB8"/><stop offset="100%" stop-color="#366994"/></linearGradient><linearGradient id="pb" x1="19.13%" y1="20.58%" x2="90.57%" y2="88.29%"><stop offset="0%" stop-color="#FFE052"/><stop offset="100%" stop-color="#FFC331"/></linearGradient></defs><path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#pa)"/><path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#pb)"/></svg>
-            </div>
-            <div>
-              <div class="skill-name">Python</div>
-              <div class="skill-level">● Learning & Building</div>
-            </div>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill" data-width="45"></div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Scripting</span>
-            <span class="skill-tag">Automation</span>
-            <span class="skill-tag">Problem Solving</span>
-            <span class="skill-tag">Logic Building</span>
-            <span class="skill-tag">Fundamentals</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-header">
-            <div class="skill-icon skill-icon-git">
-              <svg viewBox="0 0 256 256" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.78 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-1.39V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.31L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.32" fill="#fff"/></svg>
-            </div>
-            <div>
-              <div class="skill-name">Git & GitHub</div>
-              <div class="skill-level">● Exploring</div>
-            </div>
-          </div>
-          <div class="skill-bar-track">
-            <div class="skill-bar-fill skill-bar-git" data-width="30"></div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Version Control</span>
-            <span class="skill-tag">Repositories</span>
-            <span class="skill-tag">Collaboration</span>
-            <span class="skill-tag">Open Source</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Code window below -->
-      <div class="skill-code skill-code-block reveal reveal-delay-4">
-          <div class="code-titlebar">
-            <span class="code-dot r"></span>
-            <span class="code-dot y"></span>
-            <span class="code-dot g"></span>
-            <span class="code-filename">vaibhav.py</span>
-            <span class="code-icon">&lt;/&gt;</span>
-          </div>
-          <div class="code-body">
-            <div><span class="kw">class</span> <span class="fn">Vaibhav</span>:</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"""First-year dreamer, builder."""</span></div>
-            <div></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(self):</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="str">"Vaibhav Chaudhary"</span></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="str">"BTech Student"</span></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.university = <span class="str">"NST-RU"</span></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.passions = [</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Python"</span>,</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"AI / ML"</span>,</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Problem Solving"</span></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</div>
-            <div></div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">motto</span>(self):</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Code. Learn. Build intelligent things."</span><span class="terminal-cursor"></span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ========== INTERESTS ========== -->
-  <section id="interests">
-    <div class="container">
-      <div class="section-label reveal">Interests</div>
-      <h2 class="section-title reveal reveal-delay-1">Beyond the <strong>code</strong></h2>
-      <p class="section-subtitle reveal reveal-delay-2">Technology is my craft, but creativity is my soul.</p>
-
-      <div class="interests-grid">
-        <div class="interest-card reveal">
-          <span class="interest-icon">🎬</span>
-          <h3 class="interest-title">Cinema</h3>
-          <p class="interest-desc">Watching and studying films across genres and eras — understanding what makes a frame unforgettable.</p>
-        </div>
-        <div class="interest-card reveal reveal-delay-1">
-          <span class="interest-icon">🎥</span>
-          <h3 class="interest-title">Film Direction</h3>
-          <p class="interest-desc">Fascinated by visual storytelling, shot composition, and the director's craft of turning a vision into reality.</p>
-        </div>
-        <div class="interest-card reveal reveal-delay-2">
-          <span class="interest-icon">✍️</span>
-          <h3 class="interest-title">Storytelling</h3>
-          <p class="interest-desc">Great stories move people. Drawn to narrative structure, character arcs, and a well-told tale.</p>
-        </div>
-        <div class="interest-card reveal reveal-delay-3">
-          <span class="interest-icon">🎞️</span>
-          <h3 class="interest-title">Production</h3>
-          <p class="interest-desc">Exploring the full pipeline — from pre-production planning to post-production magic.</p>
-        </div>
-        <div class="interest-card reveal reveal-delay-4">
-          <span class="interest-icon">🤖</span>
-          <h3 class="interest-title">Playing with AI</h3>
-          <p class="interest-desc">Experimenting with ChatGPT, Midjourney, and coding assistants — using AI for fun & productivity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ========== EXPLORING ========== -->
-  <section id="exploring">
-    <div class="container">
-      <div class="section-label reveal">Currently Exploring</div>
-      <h2 class="section-title reveal reveal-delay-1">The learning <strong>journey</strong></h2>
-      <p class="section-subtitle reveal reveal-delay-2">Every expert was once a beginner. Here's where I am on the path.</p>
-
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <span class="timeline-status active"><span class="dot-sm"></span> In Progress</span>
-          <h3 class="timeline-title">Python Fundamentals & Beyond</h3>
-          <p class="timeline-desc">Deepening my understanding of Python — from core syntax and data structures to scripting and automation. Building a solid foundation one line at a time.</p>
-        </div>
-        <div class="timeline-item reveal reveal-delay-1">
-          <span class="timeline-status active"><span class="dot-sm"></span> In Progress</span>
-          <h3 class="timeline-title">First Year - Exploring Phase</h3>
-          <p class="timeline-desc">Navigating my first year at NST-RU, exploring the fundamentals of engineering, exploring open source, competitive programming and discovering where my curiosity leads.</p>
-        </div>
-        <div class="timeline-item reveal reveal-delay-2">
-          <span class="timeline-status next">◇ Next Up</span>
-          <h3 class="timeline-title">AI & Machine Learning Fundamentals</h3>
-          <p class="timeline-desc">Planning to dive into NumPy, Pandas, and scikit-learn — building the foundation for working with data and training models.</p>
-        </div>
-        <div class="timeline-item reveal reveal-delay-3">
-          <span class="timeline-status future">○ Aspiring</span>
-          <h3 class="timeline-title">Deep Learning & Real-World AI Projects</h3>
-          <p class="timeline-desc">Dreaming of building intelligent applications — from neural networks and NLP to creating AI-powered tools that solve real problems.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ========== CONTACT ========== -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="section-label section-label-center reveal">Let's Connect</div>
-        <h2 class="section-title reveal reveal-delay-1">Say <strong>hello</strong></h2>
-        <p class="section-subtitle section-subtitle-center reveal reveal-delay-2">
-          Have an idea, a question, or just want to talk code and AI? I'd love to hear from you.
-        </p>
-        <a href="mailto:hello@vaibhav.dev" class="contact-email-wrap reveal reveal-delay-3">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-          hello@vaibhav.dev
-        </a>
-        <div class="social-links reveal reveal-delay-4">
-          <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="X (Twitter)" title="X (Twitter)">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <div class="container">
-      <p>Designed & built with <span>♥</span> by Vaibhav Chaudhary · <span id="year"></span></p>
-      <span class="footer-hand">still a work in progress ✦</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+      <div class="hero-bottom"><a class="scroll-cue" href="#about"><span class="scroll-mouse" aria-hidden="true"><i></i></span><span>Better when you scroll.</span><span aria-hidden="true">↓</span></a><p>Currently learning at <strong>NST-RU</strong><span class="bottom-divider"></span>First-year BTech</p><span class="edition eyebrow">PERSONAL PORTFOLIO / 2026</span></div>
+    </div></section>
+    <div class="word-ribbon" aria-hidden="true"><div class="ribbon-track"><span>LEARN</span><i>↗</i><span>BUILD</span><i>✳</i><span>BREAK</span><i>↗</i><span>REPEAT</span><i>✳</i><span>LEARN</span><i>↗</i><span>BUILD</span><i>✳</i></div></div>
+    <section class="about" id="about" aria-labelledby="aboutTitle"><div class="about-sticky section-shell"><div class="section-kicker"><span class="eyebrow">01 / THE HUMAN</span><span class="eyebrow muted">MORE THAN A USERNAME</span></div><div class="about-layout"><div class="about-margin"><span class="asterisk" aria-hidden="true">✳</span><p>Big questions.<br>Small steps.<br>Usually Python.</p></div><div class="about-main"><h2 class="reading-text" id="aboutTitle">I'm Vaibhav. A first-year BTech student at NST-RU, connecting the dots between Python, artificial intelligence, and things I haven't figured out yet.</h2><div class="about-details"><p>I like understanding how things work, building scripts, and exploring how machines learn and think. Somewhere between logic and creativity is where I feel most at home.</p><p>When I'm not coding, I'm experimenting with AI tools, reading about machine learning, or getting a little too invested in a good film.</p></div><dl class="quick-facts"><div><dt>Currently</dt><dd>BTech, First Year</dd></div><div><dt>Learning at</dt><dd>NST-RU</dd></div><div><dt>Based in</dt><dd>India <span aria-hidden="true">↗</span></dd></div></dl></div></div></div></section>
+    <section class="skills section-shell" id="skills" aria-labelledby="skillsTitle"><div class="section-kicker"><span class="eyebrow">02 / THE TOOLKIT</span><span class="eyebrow skills-aside">LESS “EXPERT IN EVERYTHING.”<br>MORE “EXCITED TO LEARN.”</span></div><div class="section-heading"><h2 class="split-reveal" id="skillsTitle">Small toolkit.<br><span class="muted-light">Big intentions.</span></h2><p class="reveal">Building from the ground up.<br>One concept. One commit.<br>One surprisingly missing colon.</p></div>
+      <div class="skill-grid"><article class="skill-card python-card" data-tilt><div class="skill-card-top"><span class="eyebrow">01 / LEARNING &amp; BUILDING</span><span class="skill-icon" aria-hidden="true">{ }</span></div><h3>Python<span class="blue">.</span></h3><p class="skill-description">Turning “what if?” into<br>“okay, that actually works.”</p><div class="python-demo" aria-label="Illustrative Python code"><div class="code-numbers" aria-hidden="true">01<br>02<br>03<br>04</div><pre><code><span class="code-keyword">while</span> curious:
+    <span class="code-function">learn</span>()
+    <span class="code-function">build</span>()
+    <span class="code-function">repeat</span>()<span class="code-caret" aria-hidden="true"></span></code></pre><span class="code-caption eyebrow">A LOOP I'M HAPPY TO BE STUCK IN.</span></div><div class="skill-tags"><span>Scripting</span><span>Automation</span><span>Problem Solving</span><span>Logic Building</span><span>Fundamentals</span></div><p class="skill-footnote">A relationship built on trust. And indentation.</p></article>
+        <article class="skill-card git-card" data-tilt><div class="skill-card-top"><span class="eyebrow">02 / EXPLORING</span><svg class="git-symbol" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="7" r="3"/><circle cx="10" cy="25" r="3"/><circle cx="24" cy="9" r="3"/><path d="M10 10v12m0-4c0-5 14 0 14-6"/></svg></div><h3>Git &amp; <br>GitHub<span>.</span></h3><p class="skill-description">A little more version control.<br>A little less “final_final_v7”.</p><div class="git-graph" aria-hidden="true"><svg viewBox="0 0 360 105"><path class="branch-base" d="M0 76H360M80 76c38 0 25-48 65-48h65c43 0 28 48 75 48"/><path class="branch-live" d="M0 76H360M80 76c38 0 25-48 65-48h65c43 0 28 48 75 48"/><circle cx="50" cy="76" r="7"/><circle cx="155" cy="28" r="7"/><circle cx="230" cy="28" r="7"/><circle cx="310" cy="76" r="7"/></svg><span class="commit-note eyebrow">SMALL COMMITS. FORWARD MOTION.</span></div><div class="skill-tags"><span>Version Control</span><span>Repositories</span><span>Collaboration</span><span>Open Source</span></div><p class="skill-footnote">Commit first. Existential crisis later.</p></article></div><p class="toolkit-end eyebrow"><span class="status-dot"></span> STILL ADDING TO THE TOOLKIT. THAT'S THE FUN PART.</p>
+    </section>
+    <section class="interests" id="interests" aria-labelledby="interestsTitle"><div class="interests-sticky"><div class="section-shell interests-header"><div class="section-kicker"><span class="eyebrow">03 / OFFSCREEN</span><span class="eyebrow interest-instruction">KEEP SCROLLING <span aria-hidden="true">→</span></span></div><div class="section-heading"><h2 id="interestsTitle">Not all my tabs<br>are about <span class="blue">code.</span></h2><p>Technology keeps me curious.<br>Stories keep me human.<br><span class="muted">The screen time is… research.</span></p></div></div>
+      <div class="interests-viewport"><div class="interests-track" id="interestsTrack">
+        <article class="interest-card" data-interest="Cinema"><div class="interest-art cinema-art" aria-hidden="true"><span class="art-label eyebrow">THE “ONE MORE” CLUB</span><div class="cinema-ticket"><span>ADMIT ONE</span><strong>ONE<br>MORE<br>FILM<span>®</span></strong><div class="ticket-dashes"></div><span class="ticket-small">EST. EVERY EVENING</span></div><span class="art-foot eyebrow">RUNTIME: LONGER THAN PLANNED.</span></div><div class="interest-title"><h3>Cinema</h3><span class="eyebrow">01 / 05</span></div><p>Watching and studying films across genres and eras. Finding out what makes a frame unforgettable.</p><span class="interest-note">“One more film” is not a binding promise.</span></article>
+        <article class="interest-card" data-interest="Film Direction"><div class="interest-art direction-art" aria-hidden="true"><span class="art-label eyebrow">A DIFFERENT POINT OF VIEW</span><div class="composition-frame"><i></i><i></i><i></i><i></i><div class="composition-sun"></div><div class="composition-hill"></div><div class="composition-cross">+</div><span class="frame-label eyebrow">FIND THE SHOT.</span></div><span class="art-foot eyebrow">IT ALL STARTS WITH A FRAME.</span></div><div class="interest-title"><h3>Film Direction</h3><span class="eyebrow">02 / 05</span></div><p>Visual storytelling, shot composition, and the director's craft of turning a vision into reality.</p><span class="interest-note">Directing my life. The cast is uncooperative.</span></article>
+        <article class="interest-card" data-interest="Storytelling"><div class="interest-art story-art" aria-hidden="true"><span class="art-label eyebrow">EVERYTHING HAS A STORY</span><div class="story-sheet sheet-back"></div><div class="story-sheet sheet-front"><span class="eyebrow">THE FIRST DRAFT</span><strong>What<br>if<span>…</span></strong><div class="story-lines"><i></i><i></i><i></i></div><span class="story-star">✳</span></div><span class="art-foot eyebrow">PLOT TWISTS ENCOURAGED.</span></div><div class="interest-title"><h3>Storytelling</h3><span class="eyebrow">03 / 05</span></div><p>Narrative structure, character arcs, and the simple magic of a story that makes you feel something.</p><span class="interest-note">Even my bugs come with a backstory.</span></article>
+        <article class="interest-card" data-interest="Production"><div class="interest-art production-art" aria-hidden="true"><span class="art-label eyebrow">MAKING IT ALL COME TOGETHER</span><div class="production-board"><div class="board-top"><span>THE PROCESS</span><span>●</span></div><div class="board-row"><span>IDEA</span><div><i></i></div><span>01</span></div><div class="board-row"><span>MAKE</span><div><i></i></div><span>02</span></div><div class="board-row"><span>REFINE</span><div><i></i></div><span>03</span></div><span class="board-bottom">A LITTLE MAGIC IN THE MIDDLE.</span></div><span class="art-foot eyebrow">FROM THE FIRST NOTE TO THE FINAL CUT.</span></div><div class="interest-title"><h3>Production</h3><span class="eyebrow">04 / 05</span></div><p>The whole pipeline: pre-production planning, making things happen, and post-production magic.</p><span class="interest-note">“Fix it in post” is also my first-draft strategy.</span></article>
+        <article class="interest-card" data-interest="Playing with AI"><div class="interest-art ai-art" aria-hidden="true"><span class="art-label eyebrow">PROFESSIONALLY ASKING “WHAT IF?”</span><div class="ai-bubble bubble-user">What if we tried… <span>↗</span></div><div class="ai-bubble bubble-reply"><span class="ai-spark">✳</span><div><i></i><i></i><i></i></div></div><span class="ai-question">?</span><span class="art-foot eyebrow">CURIOSITY, MEET COMPUTE.</span></div><div class="interest-title"><h3>Playing with AI</h3><span class="eyebrow">05 / 05</span></div><p>Experimenting with ChatGPT, Midjourney, and coding assistants. A mix of fun, productivity, and possibility.</p><span class="interest-note">It asks for context. I ask for a miracle.</span></article>
+      </div></div><div class="section-shell interests-bottom"><div class="interest-dots" aria-label="Interest navigation"><button type="button" aria-label="Scroll to Cinema" aria-current="true"></button><button type="button" aria-label="Scroll to Film Direction"></button><button type="button" aria-label="Scroll to Storytelling"></button><button type="button" aria-label="Scroll to Production"></button><button type="button" aria-label="Scroll to Playing with AI"></button></div><span class="eyebrow interest-counter"><span id="interestCounter">01</span> <span class="muted">/ 05 THINGS THAT MAKE ME, ME</span></span></div></div></section>
+    <section class="journey section-shell" id="exploring" aria-labelledby="journeyTitle"><div class="section-kicker"><span class="eyebrow">04 / WHAT'S NEXT</span><span class="eyebrow muted">THE HONEST PROGRESS REPORT</span></div><div class="journey-layout"><div class="journey-intro"><h2 class="split-reveal" id="journeyTitle">Getting there.<br><span class="blue">One “aha!”<br>at a time.</span></h2><p>Every expert started somewhere.<br>This is my somewhere.</p><span class="journey-scribble">Loading potential, please wait.<span aria-hidden="true">↴</span></span><div class="journey-meter" aria-hidden="true"><span></span></div></div><div class="timeline"><div class="timeline-rail" aria-hidden="true"><span></span></div>
+      <article class="timeline-item"><span class="timeline-point" aria-hidden="true"></span><div class="timeline-meta"><span class="eyebrow">01 / THE FOUNDATION</span><span class="status-tag in-progress">In progress</span></div><h3>Python Fundamentals<br>&amp; Beyond</h3><p>Core syntax, data structures, scripting, and automation. Building a solid foundation one line at a time.</p></article>
+      <article class="timeline-item"><span class="timeline-point" aria-hidden="true"></span><div class="timeline-meta"><span class="eyebrow">02 / FINDING MY DIRECTION</span><span class="status-tag in-progress">In progress</span></div><h3>First Year.<br>Exploring Everything.</h3><p>Navigating engineering at NST-RU, exploring open source and competitive programming, and seeing where curiosity leads.</p></article>
+      <article class="timeline-item"><span class="timeline-point" aria-hidden="true"></span><div class="timeline-meta"><span class="eyebrow">03 / THE NEXT RABBIT HOLE</span><span class="status-tag">Next up</span></div><h3>AI &amp; Machine Learning<br>Fundamentals</h3><p>Planning to dive into NumPy, Pandas, and scikit-learn. Learning to work with data and train models.</p></article>
+      <article class="timeline-item"><span class="timeline-point" aria-hidden="true"></span><div class="timeline-meta"><span class="eyebrow">04 / THE BIGGER PICTURE</span><span class="status-tag">Aspiring</span></div><h3>Deep Learning &amp;<br>Real-World AI Projects</h3><p>Neural networks, NLP, and intelligent applications. The goal: build AI-powered tools that solve real problems.</p></article>
+    </div></div></section>
+    <section class="contact" id="contact" aria-labelledby="contactTitle"><div class="contact-inner section-shell"><div class="section-kicker"><span class="eyebrow">05 / OPEN A NEW TAB</span><span class="eyebrow">FOR A GOOD CONVERSATION, ALWAYS.</span></div><div class="contact-heading"><h2 id="contactTitle">Good things<br>start with <a href="mailto:vaibhavchaudhary767@gmail.com">hello<span class="hello-period">.</span></a></h2><a class="contact-orb magnetic" href="mailto:vaibhavchaudhary767@gmail.com" aria-label="Email Vaibhav"><span aria-hidden="true">↗</span></a></div><div class="contact-details"><p>Code, AI, films, or an interesting idea.<br>I'm always up for a conversation.<br><span class="contact-joke">Bonus points if you have a good film recommendation.</span></p><div class="email-block"><span class="eyebrow">STRAIGHT TO THE INBOX</span><div class="email-row"><a href="mailto:vaibhavchaudhary767@gmail.com">vaibhavchaudhary767@gmail.com</a><button class="copy-email" id="copyEmail" type="button" aria-label="Copy email address" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="11" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg></button></div><span class="copy-feedback" id="copyFeedback" role="status"></span></div></div><div class="contact-socials"><a href="https://github.com/vaibhavlord" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/vaibhav-chaudhary-9380b142b/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a><a href="#home" class="back-top"><span>Back to the curiosity</span><span aria-hidden="true">↑</span></a></div><footer><a class="brand footer-brand" href="#home">vaibhav<span>.</span></a><p>© <span id="year">2026</span> Vaibhav Chaudhary</p><p>Made of curiosity. And a few Ctrl+Zs.</p></footer></div></section>
+  </main>
+  <div class="scroll-status" aria-hidden="true"><span class="status-number">01</span><span class="status-separator"></span><span class="status-name">INTRO</span><svg viewBox="0 0 20 20"><circle class="status-ring-bg" cx="10" cy="10" r="7"/><circle class="status-ring" cx="10" cy="10" r="7"/></svg></div>
 </body>
 </html>
