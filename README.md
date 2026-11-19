@@ -57,7 +57,8 @@ If you already have the project, run only the server command from its folder. Fo
 | `generated_images/exec-928bcab1-cdfe-4b76-b39d-5590ffede0d3.png` | Extended forearm artwork used in the full-width scroll sequence: 1942 × 809 pixels |
 | `assets/fonts/` | Locally served font files and their licenses |
 | `assets/references/hands-reference.jpg` | Preserved original hand reference |
-| `favicon.svg` | Black-and-white portfolio favicon |
+| `favicon.svg` | Rounded-corner Batman favicon with transparent corners and the original image embedded |
+| `favicon.png` | Original Batman image used by the favicon |
 | `README.md` | Overview and setup instructions |
 
 The enhanced images are higher-resolution restorations, not native 4K exports. The original reference files are retained.
@@ -72,7 +73,7 @@ The enhanced images are higher-resolution restorations, not native 4K exports. T
 
 ## Deployment
 
-Serve the repository root with a static hosting service. Keep the `assets` and `generated_images` directories alongside `index.html`, `style.css`, `script.js`, `ink-flames.js`, and `favicon.svg`. There is no build command to configure.
+Serve the repository root with a static hosting service. Keep the `assets` and `generated_images` directories alongside `index.html`, `style.css`, `script.js`, `ink-flames.js`, `favicon.svg`, and `favicon.png`. There is no build command to configure.
 
 ## Connect
 
